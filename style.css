@@ -1,0 +1,87 @@
+section {
+    background-color: bisque;
+}
+article {
+    padding:20px;  
+    width: 100%;      
+    clear:both;        
+    background-color: rgb(190, 151, 33);
+    color: rgb(245, 243, 204);
+    border: 10px dotted rgb(50, 50, 46);
+    margin-bottom:4%;
+    box-sizing: border-box;
+}
+img {
+    background-color: rgb(205, 194, 37);
+    padding:10px;
+    box-sizing: border-box;
+}
+h2 {
+    padding: 10px 0px;
+    background-color: rgb(68, 68, 52);
+    color:rgb(245, 243, 204);
+}
+h3 {
+    text-decoration:underline;
+}
+a:visited, a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active, a:hover{
+    color: #c2c8d1;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.ui-content {
+    text-align: center; 
+    width:80%;
+    margin:auto;
+    border: 2px solid black;
+}
+.right {
+    margin-right:10%;
+    margin-left:auto;
+    display:grid;
+    grid-auto-flow: column;
+    grid-column-gap: 50px;
+    text-align: justify;
+    background-color: rgb(68, 68, 52);
+    padding:0px 10px;
+}	
+.left {
+    margin-left:auto;
+    margin-right:10%;
+    display:grid;
+    grid-auto-flow: column;
+    grid-column-gap: 50px;
+    text-align: justify;
+    background-color: rgb(68, 68, 52);
+    padding:0px 10px;
+}
+.row-justify{
+    margin-left:5%;
+    margin-right:15%;
+    display:grid;
+    grid-auto-flow: row;
+    text-align: justify;
+    background-color: rgb(68, 68, 52);
+    padding:0px 10px;
+}
+.img-right {
+    float:right;
+    padding:20px;
+}
+.img-left {
+    float:left;
+    padding:20px;
+}
+@media screen and (max-width:990px) {
+    .right, .left, .center {	/*turns the grid to block elements when on smaller window*/
+        display:block;
+        width:90%;
+        }
+}
