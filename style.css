@@ -1,3 +1,8 @@
+.pg {
+    background-image: url("./dog-pics/dog-bg.jpg");
+    background-color: #cccccc;
+}
+
 section {
     background-color: bisque;
 }
@@ -23,6 +28,10 @@ h2 {
 }
 h3 {
     text-decoration:underline;
+    background-color: #95441c;
+    color: rgb(245, 243, 204);
+    padding: 10px;
+    height:25px;
 }
 a:visited, a:link {
     color: white;
@@ -50,6 +59,7 @@ a:active, a:hover{
     grid-column-gap: 50px;
     text-align: justify;
     background-color: rgb(68, 68, 52);
+    color: rgb(245, 243, 204);
     padding:0px 10px;
 }	
 .left {
@@ -60,6 +70,7 @@ a:active, a:hover{
     grid-column-gap: 50px;
     text-align: justify;
     background-color: rgb(68, 68, 52);
+    color: rgb(245, 243, 204);
     padding:0px 10px;
 }
 .row-justify{
@@ -79,9 +90,35 @@ a:active, a:hover{
     float:left;
     padding:20px;
 }
+
+.ui-grid-a {
+    display: flex;
+}
+
+.ui-block-a, .ui-block-b {
+    background-color: rgb(68, 68, 52);
+    text-align: justify;
+    box-sizing: border-box;
+    padding:15px;
+}
+
 @media screen and (max-width:990px) {
-    .right, .left, .center {	/*turns the grid to block elements when on smaller window*/
+    .right, .left, .center,.row-justify {	/*turns the grid to block elements when on smaller window*/
         display:block;
         width:90%;
         }
+    h3 {
+        height:100%;
+    }
+    .breakpoint .ui-block-a,
+    .breakpoint .ui-block-b {
+        width:100%;
+        float:none;
+    }
+    .ui-grid-a {
+        display:block;
+    }
+    .img-s {
+        width:100%;
+    }
 }
